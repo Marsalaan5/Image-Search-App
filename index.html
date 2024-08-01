@@ -7,28 +7,99 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Image Search App</h1>
-<form action="" >
-    <input type="text" id="search-input" placeholder="Search for Images">
-    <button id="search-button">Search</button>
-</form>
-<div class="search-results">
-    <div class="search-result">
-        <img src="https://images.unsplash.com/photo-1682686580922-2e594f8bdaa7?q=80&w=220&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mountains">
-        <a href="https://unsplash.com/photos/a-man-standing-next-to-a-tent-in-the-desert-p4q-Ra__g8M" target="_blank">Mountains</a>
-    </div>
-    <div class="search-result">
-        <img src="https://images.unsplash.com/photo-1682686580922-2e594f8bdaa7?q=80&w=220&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mountains">
-        <a href="https://unsplash.com/photos/a-man-standing-next-to-a-tent-in-the-desert-p4q-Ra__g8M" target="_blank">Mountains</a>
-    </div>
-    <div class="search-result">
-        <img src="https://images.unsplash.com/photo-1682686580922-2e594f8bdaa7?q=80&w=220&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mountains">
-        <a href="https://unsplash.com/photos/a-man-standing-next-to-a-tent-in-the-desert-p4q-Ra__g8M" target="_blank">Mountains</a>
-    </div>
-</div>
+    <header class="header">
+        <div class="container">
+            <h1>Image Search App</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<button id="show-more-button">Show More</button>
+    <main class="main-content">
+        <div class="container">
+            <section id="home" class="search-section">
+                <form action="" class="search-form">
+                    <input type="text" id="search-input" placeholder="Search for Images" class="search-input">
+                    <button id="search-button" class="search-button">Search</button>
+                </form>
+            </section>
 
-<script src="script.js"></script>
+            <section id="about" class="about-section">
+                <h2>About</h2>
+                <p>Welcome to the Image Search App! This application allows you to search for beautiful images from Unsplash's extensive library. Whether you're looking for nature, animals, technology, or people, you'll find stunning images to suit your needs.</p>
+            </section>
+
+            <section id="gallery" class="gallery-section">
+                <h2>Gallery</h2>
+                <div class="search-results">
+                    <div class="search-result">
+                        <img src="https://images.unsplash.com/photo-1682686580922-2e594f8bdaa7?q=80&w=220&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mountains">
+                        <a href="https://unsplash.com/photos/a-man-standing-next-to-a-tent-in-the-desert-p4q-Ra__g8M" target="_blank">Technology</a>
+                    </div>
+                    <div class="search-result">
+                        <img src="https://images.unsplash.com/photo-1682686580922-2e594f8bdaa7?q=80&w=220&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mountains">
+                        <a href="https://unsplash.com/photos/a-man-standing-next-to-a-tent-in-the-desert-p4q-Ra__g8M" target="_blank">Mountains</a>
+                    </div>
+                    <div class="search-result">
+                        <img src="https://images.unsplash.com/photo-1682686580922-2e594f8bdaa7?q=80&w=220&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mountains">
+                        <a href="https://unsplash.com/photos/a-man-standing-next-to-a-tent-in-the-desert-p4q-Ra__g8M" target="_blank">Mountains</a>
+                    </div>
+                </div>
+                <div class="load-more">
+                    <button id="show-more-button" class="show-more-button">Show More</button>
+                </div>
+            </section>
+
+            <section id="contact" class="contact-section">
+                <h2>Contact</h2>
+                <p>If you have any questions or feedback, please feel free to reach out to us. We'd love to hear from you!</p>
+                <form action="" class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <aside class="sidebar">
+        <div class="container">
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="#nature">Nature</a></li>
+                <li><a href="#animals">Animals</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#people">People</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <footer class="footer">
+        <div class="container">
+            <h2>Stay Connected</h2>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" title="Facebook">F</a>
+                <a href="https://twitter.com" target="_blank" title="Twitter">T</a>
+                <a href="https://instagram.com" target="_blank" title="Instagram">I</a>
+              
+            </div>
+            <div class="footer-nav">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                
+            </div>
+            <p>&copy; 2024 Image Search App. All rights reserved.</p>
+            <p>Powered by Unsplash API</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
